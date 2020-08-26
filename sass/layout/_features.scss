@@ -1,0 +1,30 @@
+/* Features */
+.features {
+  padding-bottom: 47px;
+
+  &-item {
+    width: calc((100% - 3 * 30px) / 4);
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  &-title {
+    margin-bottom: 10px;
+    @include font(14px, 700, 1.14);
+    text-transform: uppercase;
+    color: $color-secondary-dark;
+  }
+
+  &-description {
+    @include font(14px, 400, 1.71);
+  }
+}
+
+.img {
+  @include centeredFlex();
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--bcg-secondary);
+}

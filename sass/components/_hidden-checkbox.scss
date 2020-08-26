@@ -1,0 +1,4 @@
+/* Визуально скрытый чекбокс */
+.form-checkbox {
+  @include visuallyHidden();
+}

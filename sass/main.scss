@@ -1,0 +1,23 @@
+@import './base/fonts';
+@import './base/normalize';
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/placeholders';
+
+@import './base/base';
+
+@import './components/container';
+@import './components/section';
+@import './components/hidden-checkbox';
+@import './components/filter';
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/modal';
+@import './layout/features';
+@import './layout/activities';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/portfolio';
+@import './layout/projects';
+@import './layout/footer';

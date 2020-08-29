@@ -58,7 +58,7 @@
 
 .projects-description {
   position: absolute;
-  @include flex(flex, flex-start, center);
+  @include flex(flex, flex-start, center, wrap);
   width: 100%;
   height: 100%;
   padding-left: 24px;

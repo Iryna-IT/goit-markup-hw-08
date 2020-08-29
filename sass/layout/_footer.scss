@@ -4,7 +4,7 @@ footer {
   color: $color-footer;
 
   & .container {
-    @include flex(flex, space-between, baseline);
+    @include flex(flex, space-between, baseline, wrap);
     padding-top: 60px;
     padding-bottom: 60px;
   }

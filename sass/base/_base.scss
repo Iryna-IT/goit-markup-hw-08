@@ -4,6 +4,10 @@ html {
 
 button {
   outline: none;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
 }
 
 *,
@@ -27,7 +31,9 @@ img {
 }
 
 ul {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 li {

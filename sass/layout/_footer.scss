@@ -181,7 +181,7 @@ footer {
   }
 
   &-input {
-    width: 358px;
+    width: 100%;
     height: 50px;
     padding-left: 16px;
     background-color: transparent;
@@ -192,5 +192,11 @@ footer {
     @include font(16px, 400, 1.25);
     letter-spacing: $letter-spacing-main;
     color: $color-footer;
+    @media screen and (min-width: 768px) {
+      width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+    }
   }
 }

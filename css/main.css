@@ -656,6 +656,7 @@ section {
     width: 100%;
     text-align: center;
     background-color: #ffffff;
+    z-index: 100;
   }
 }
 
@@ -1017,8 +1018,6 @@ section {
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
-  min-width: 450px;
-  min-height: 609px;
   padding-left: 40px;
   padding-right: 40px;
   background-color: #ffffff;
@@ -1026,10 +1025,17 @@ section {
   border-radius: 4px;
 }
 
+@media screen and (min-width: 768px) {
+  .modal-form {
+    width: 450px;
+    height: 609px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .modal-form {
-    min-width: 528px;
-    min-height: 581px;
+    width: 528px;
+    height: 581px;
   }
 }
 
@@ -1135,7 +1141,7 @@ section {
 }
 
 .form-textarea {
-  width: 370px;
+  width: 100%;
   height: 120px;
   padding: 12px 16px;
   resize: none;
@@ -1145,7 +1151,6 @@ section {
 @media screen and (min-width: 1200px) {
   .form-textarea {
     width: 448px;
-    height: 120px;
   }
 }
 
@@ -1209,6 +1214,7 @@ section {
   width: 16px;
   height: 15px;
   background-image: url("../images/modal_form/check.svg");
+  background-repeat: no-repeat;
   background-size: content;
   background-origin: border-box;
   border: 2px solid #212121;
@@ -1322,7 +1328,7 @@ section {
   height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
-  background-color: var(--bcg-secondary);
+  background-color: #f5f4fa;
 }
 
 /* Activities */
@@ -1347,6 +1353,7 @@ section {
 
 .activities-img {
   display: block;
+  width: 100%;
 }
 
 .activities-title {
@@ -1421,23 +1428,8 @@ section {
 }
 
 .team-photo {
-  width: 450px;
-  height: 320px;
+  width: 100%;
   margin-bottom: 30px;
-}
-
-@media screen and (min-width: 768px) {
-  .team-photo {
-    width: 354px;
-    height: 260px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .team-photo {
-    width: 270px;
-    height: 260px;
-  }
 }
 
 .team-name {
@@ -1621,6 +1613,7 @@ section {
 
 .projects-img {
   display: block;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -1903,7 +1896,7 @@ footer form label {
 }
 
 .subscribe-input {
-  width: 358px;
+  width: 100%;
   height: 50px;
   padding-left: 16px;
   background-color: transparent;
@@ -1916,5 +1909,17 @@ footer form label {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-input {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-input {
+    width: 358px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

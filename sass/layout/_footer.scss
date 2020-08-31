@@ -4,19 +4,30 @@ footer {
   color: $color-footer;
 
   & .container {
-    @include flex(flex, space-between, baseline, wrap);
+    display: block;
     padding-top: 60px;
     padding-bottom: 60px;
+    @media screen and (min-width: 768px) {
+      @include flex(flex, center, flex-start, wrap);
+    }
+    @media screen and (min-width: 1200px) {
+      @include flex(flex, space-between, flex-start, wrap);
+    }
   }
 
   & .button-submit {
     width: 200px;
     height: 50px;
-    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    // margin: 0px;
     padding: 0px;
     background-color: $color-accent;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    @media screen and (max-width: 1199px) {
+      margin-top: 20px;
+    }
 
     &-icon {
       margin-left: 10px;
@@ -25,31 +36,46 @@ footer {
   }
 
   & form {
-    display: flex;
-  }
+    display: block;
+    text-align: center;
+    @media screen and (min-width: 1199px) {
+      @include centeredFlex();
+    }
 
-  & label {
-    margin-right: 12px;
+    & label {
+      margin-right: 12px;
+    }
   }
 }
 
 .contacts {
-  width: 231px;
-  margin-right: 69px;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 
   & > .logo {
-    display: block;
-    width: 231px;
     margin-bottom: 20px;
     padding-top: 0px;
     padding-bottom: 0px;
     color: $color-secondary-light;
     text-align: left;
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
   }
 }
 
 .address {
   font-style: normal;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 
   &-list {
     display: block;
@@ -57,6 +83,9 @@ footer {
 
   &-item {
     margin-bottom: 9px;
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
   }
 
   &-link {
@@ -82,16 +111,18 @@ footer {
 }
 
 .join {
-  margin-right: 94px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 
   &-socials-list {
-    @include flex();
-    max-width: 206px;
+    @include centeredFlex();
   }
-
-  &-socials-item {
-    width: calc((100% - 3 * 10px) / 4);
-  }
+  //   // max-width: 206px;
+  // }
 
   &-socials-item:not(:last-child) {
     margin-right: 10px;
@@ -124,11 +155,19 @@ footer {
     @include font(14px, 700, 1.14);
     text-transform: uppercase;
     color: $color-secondary-light;
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
   }
 }
 
 .subscribe {
-  width: 570px;
+  // @media screen and (min-width: 768px) {
+  //   flex-basis: 70%;
+  // }
+  // @media screen and (min-width: 1200px) {
+  //   flex-basis: 49%;
+  // }
 
   &-action {
     display: block;
@@ -136,6 +175,9 @@ footer {
     @include font(14px, 700, 1.14);
     text-transform: uppercase;
     color: $color-secondary-light;
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
   }
 
   &-input {

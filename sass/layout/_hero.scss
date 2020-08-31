@@ -70,14 +70,14 @@
 
 .hero-title {
   margin: 0px 0px 30px;
-  @include font(44px, 900, 1.36);
+  @include font(26px, 900, 1.62);
   letter-spacing: $letter-spacing-secondary;
   text-align: center;
   text-transform: uppercase;
   color: $color-secondary-light;
 
-  @media screen and (max-width: 767px) {
-    @include font(26px, 900, 1.62);
+  @media screen and (min-width: 768px) {
+    @include font(44px, 900, 1.36);
   }
 }
 

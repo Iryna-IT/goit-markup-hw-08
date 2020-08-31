@@ -180,24 +180,25 @@
 
 .contacts-icon.envelope {
   width: 16px;
-  height: 12px;
-  @media screen and (max-width: 767px) {
-    height: 11px;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  height: 11px;
+  @media screen and (min-width: 768px) {
     width: 14px;
     height: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
   }
 }
 
 .contacts-icon.smartphone {
   width: 10px;
-  height: 16px;
-  @media screen and (max-width: 767px) {
-    height: 15px;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  height: 15px;
+  @media screen and (min-width: 768px) {
     height: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 16px;
   }
 }
 

@@ -251,13 +251,23 @@
           <ul class="team-list">
             <!--Николай Кучеренко-->
             <li class="team-item">
-              <img
-                class="team-photo"
-                src="./images/studio/teams/kucherenko.jpg"
+              <picture class="team-photo-set" >
+                <source class="team-photo-set-desktop" srcset="./images/studio/teams/kucherenko.webp 1x, ./images/studio/teams/kucherenko@2x.webp 2x" type="image/webp" media="(min-width: 1200px)" />
+                <source class="team-photo-set-tablet" srcset="./images/studio/teams/tablet/kucherenko_tablet.webp 1x, ./images/studio/teams/tablet/kucherenko_tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)" />
+                <source class="team-photo-set-mobile" srcset="./images/studio/teams/mobile/kucherenko_mobile.webp 1x, ./images/studio/teams/mobile/kucherenko_mobile@2x.webp 2x" type="image/webp" media="(max-width: 767px)" />
+                <img
+                class="team-photo" srcset="
+                ./images/studio/teams/kucherenko.jpg 1x,
+                ./images/studio/teams/kucherenko@2x.jpg 2x,
+                ./images/studio/teams/mobile/kucherenko_mobile.jpg 1x,
+                ./images/studio/teams/mobile/kucherenko_mobile@2x.jpg 2x,
+                ./images/studio/teams/tablet/kucherenko_tablet.jpg 1x,
+                ./images/studio/teams/tablet/kucherenko_tablet@2x.jpg 2x,
+                "
+                src="./images/studio/teams/mobile/kucherenko_mobile.jpg"
                 alt="Фото Николая Кучеренко"
-                width="270"
-                height="260"
               />
+              </picture>
               <h3 class="team-name">Николай Кучеренко</h3>
               <p class="team-position" lang="en">Product Designer</p>
               <!--Социальные сети-->
@@ -319,13 +329,27 @@
 
             <!--Ольга Иванова-->
             <li class="team-item">
-              <img
-                class="team-photo"
-                src="./images/studio/teams/ivanova.jpg"
+              <picture class="team-photo-set">
+                <source class="team-photo-set-desktop"
+                  srcset="./images/studio/teams/ivanova.webp 1x, ./images/studio/teams/ivanova@2x.webp 2x" type="image/webp"
+                  media="(min-width: 1200px)" />
+                <source class="team-photo-set-tablet"
+                  srcset="./images/studio/teams/tablet/ivanova_tablet.webp 1x, ./images/studio/teams/tablet/ivanova_tablet@2x.webp 2x"
+                  type="image/webp" media="(min-width: 768px)" />
+                <source class="team-photo-set-mobile"
+                  srcset="./images/studio/teams/mobile/ivanova_mobile.webp 1x, ./images/studio/teams/mobile/ivanova_mobile@2x.webp 2x"
+                  type="image/webp" media="(max-width: 767px)" />
+                <img class="team-photo" srcset="
+                              ./images/studio/teams/ivanova.jpg 1x,
+                              ./images/studio/teams/ivanova@2x.jpg 2x,
+                              ./images/studio/teams/mobile/ivanova_mobile.jpg 1x,
+                              ./images/studio/teams/mobile/ivanova_mobile@2x.jpg 2x,
+                              ./images/studio/teams/tablet/ivanova_tablet.jpg 1x,
+                              ./images/studio/teams/tablet/ivanova_tablet@2x.jpg 2x,
+                              " src="./images/studio/teams/mobile/ivanova_mobile.jpg"
                 alt="Фото Ольги Ивановой"
-                width="270"
-                height="260"
               />
+              </picture>
               <h3 class="team-name">Ольга Иванова</h3>
               <p class="team-position" lang="en">Frontend Developer</p>
               <!--Социальные сети-->
@@ -387,13 +411,27 @@
 
             <!--Андрей Шевченко-->
             <li class="team-item">
-              <img
-                class="team-photo"
-                src="./images/studio/teams/shevchenko.jpg"
+              <picture class="team-photo-set">
+                <source class="team-photo-set-desktop"
+                  srcset="./images/studio/teams/shevchenko.webp 1x, ./images/studio/teams/shevchenko@2x.webp 2x" type="image/webp"
+                  media="(min-width: 1200px)" />
+                <source class="team-photo-set-tablet"
+                  srcset="./images/studio/teams/tablet/shevchenko_tablet.webp 1x, ./images/studio/teams/tablet/shevchenko_tablet@2x.webp 2x"
+                  type="image/webp" media="(min-width: 768px)" />
+                <source class="team-photo-set-mobile"
+                  srcset="./images/studio/teams/mobile/shevchenko_mobile.webp 1x, ./images/studio/teams/mobile/shevchenko_mobile@2x.webp 2x"
+                  type="image/webp" media="(max-width: 767px)" />
+                <img class="team-photo" srcset="
+                              ./images/studio/teams/shevchenko.jpg 1x,
+                              ./images/studio/teams/shevchenko@2x.jpg 2x,
+                              ./images/studio/teams/mobile/shevchenko_mobile.jpg 1x,
+                              ./images/studio/teams/mobile/shevchenko_mobile@2x.jpg 2x,
+                              ./images/studio/teams/tablet/shevchenko_tablet.jpg 1x,
+                              ./images/studio/teams/tablet/shevchenko_tablet@2x.jpg 2x,
+                              " src="./images/studio/teams/mobile/shevchenko_mobile.jpg"
                 alt="Фото Андрея Шевченко"
-                width="270"
-                height="260"
               />
+              </picture>
               <h3 class="team-name">Андрей Шевченко</h3>
               <p class="team-position" lang="en">Marketing</p>
               <!--Социальные сети-->
@@ -455,13 +493,27 @@
 
             <!--Иван Николаев-->
             <li class="team-item">
-              <img
-                class="team-photo"
-                src="./images/studio/teams/nikolaev.jpg"
+              <picture class="team-photo-set">
+                <source class="team-photo-set-desktop"
+                  srcset="./images/studio/teams/nikolaev.webp 1x, ./images/studio/teams/nikolaev@2x.webp 2x" type="image/webp"
+                  media="(min-width: 1200px)" />
+                <source class="team-photo-set-tablet"
+                  srcset="./images/studio/teams/tablet/nikolaev_tablet.webp 1x, ./images/studio/teams/tablet/nikolaev_tablet@2x.webp 2x"
+                  type="image/webp" media="(min-width: 768px)" />
+                <source class="team-photo-set-mobile"
+                  srcset="./images/studio/teams/mobile/nikolaev_mobile.webp 1x, ./images/studio/teams/mobile/nikolaev_mobile@2x.webp 2x"
+                  type="image/webp" media="(max-width: 767px)" />
+                <img class="team-photo" srcset="
+                                            ./images/studio/teams/nikolaev.jpg 1x,
+                                            ./images/studio/teams/nikolaev@2x.jpg 2x,
+                                            ./images/studio/teams/mobile/nikolaev_mobile.jpg 1x,
+                                            ./images/studio/teams/mobile/nikolaev_mobile@2x.jpg 2x,
+                                            ./images/studio/teams/tablet/nikolaev_tablet.jpg 1x,
+                                            ./images/studio/teams/tablet/nikolaev_tablet@2x.jpg 2x,
+                                            " src="./images/studio/teams/mobile/nikolaev_mobile.jpg"
                 alt="Фото Ивана Николаева"
-                width="270"
-                height="260"
               />
+              </picture>
               <h3 class="team-name">Иван Николаев</h3>
               <p class="team-position" lang="en">UI Designer</p>
               <!--Социальные сети-->

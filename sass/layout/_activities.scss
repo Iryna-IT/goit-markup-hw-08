@@ -1,6 +1,9 @@
 /* Activities */
 .activities {
   padding-top: 47px;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 
   &-item {
     width: calc((100% - 2 * 30px) / 3);

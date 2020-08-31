@@ -76,7 +76,7 @@
 
   &-list {
     flex-basis: 71%;
-    @include flex(flex, space-between, baseline, wrap);
+    @include flex(flex, space-between, center, wrap);
     @media screen and (min-width: 1200px) {
       flex-basis: 63%;
     }

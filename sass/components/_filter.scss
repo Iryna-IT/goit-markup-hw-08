@@ -10,6 +10,12 @@
     margin-right: 8px;
   }
 
+  &-item:not(:nth-last-child(-n + 2)) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 15px;
+    }
+  }
+
   &-input {
     @include visuallyHidden();
   }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title lang="en">Portfolio</title>
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <!-- <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" /> -->
   </head>
@@ -99,13 +99,18 @@
                 aria-label="Ссылка на проект Технокряк"
               >
               <div class="projects-overlay">  
-              <img
-                  class="projects-img"
-                  src="./images/portfolio/project_1.jpg"
-                  alt="Технокряк"
-                  width="370"
-                  height="294"
-                />
+              <picture class="projects-img-set">
+                <source class="projects-img-set-desktop" srcset="./images/portfolio/project_1.webp 1x, ./images/portfolio/project_1@2x.webp 2x" type="image/webp" media="(min-width: 1200px)" />
+                <source class="projects-img-set-mobile" srcset="./images/portfolio/mobile/poject_1_mobile.webp 1x, ./images/portfolio/mobile/poject_1_mobile@2x.webp 2x" type="image/webp" media="(max-width: 1199px)" />
+                <img class="projects-img" srcset="
+                              ./images/portfolio/project_1.jpg 1x,
+                              ./images/portfolio/project_1.jpg 2x,
+                              ./images/portfolio/mobile/poject_1_mobile.jpg 1x,
+                              ./images/portfolio/mobile/poject_1_mobile@2x.jpg 2x,
+                              " 
+                              src="./images/portfolio/mobile/poject_1_mobile.jpg"
+                              alt="Технокряк" />
+              </picture>
                 <p class="projects-description">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
@@ -123,13 +128,18 @@
                 aria-label="Ссылка на Постер New Orlean vs Golden Star"
               >
               <div class="projects-overlay">
-                <img
-                  class="projects-img"
-                  src="./images/portfolio/project_2.jpg"
-                  alt="Постер New Orlean vs Golden Star"
-                  width="370"
-                  height="294"
-                />
+                <picture class="projects-img-set">
+                  <source class="projects-img-set-desktop"
+                  srcset="./images/portfolio/project_2.webp 1x, ./images/portfolio/project_2@2x.webp 2x" type="image/webp" media="(min-width: 1200px)" />
+                  <source class="projects-img-set-mobile"
+                  srcset="./images/portfolio/mobile/poject_2_mobile.webp 1x, ./images/portfolio/mobile/poject_2_mobile@2x.webp 2x" type="image/webp" media="(max-width: 1199px)" />
+                  <img class="projects-img" srcset="
+                                              ./images/portfolio/project_2.jpg 1x,
+                                              ./images/portfolio/project_2.jpg 2x,
+                                              ./images/portfolio/mobile/poject_2_mobile.jpg 1x,
+                                              ./images/portfolio/mobile/poject_2_mobile@2x.jpg 2x,
+                                             " src="./images/portfolio/mobile/poject_2_mobile.jpg" alt="Постер New Orlean vs Golden Star" />
+                </picture>
                 <p class="projects-description">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Temporibus voluptas, nostrum optio ad nobis dolor ipsa
@@ -152,13 +162,20 @@
                 aria-label="Ссылка на Ресторан Seafood"
               >
               <div class="projects-overlay">
-                <img
-                  class="projects-img"
-                  src="./images/portfolio/project_3.jpg"
-                  alt="Ресторан Seafood"
-                  width="370"
-                  height="294"
-                />
+                <picture class="projects-img-set">
+                  <source class="projects-img-set-desktop"
+                    srcset="./images/portfolio/project_3.webp 1x, ./images/portfolio/project_3@2x.webp 2x" type="image/webp"
+                    media="(min-width: 1200px)" />
+                  <source class="projects-img-set-mobile"
+                    srcset="./images/portfolio/mobile/poject_3_mobile.webp 1x, ./images/portfolio/mobile/poject_3_mobile@2x.webp 2x"
+                    type="image/webp" media="(max-width: 1199px)" />
+                  <img class="projects-img" srcset="
+                                                    ./images/portfolio/project_3.jpg 1x,
+                                                    ./images/portfolio/project_3.jpg 2x,
+                                                    ./images/portfolio/mobile/poject_3_mobile.jpg 1x,
+                                                    ./images/portfolio/mobile/poject_3_mobile@2x.jpg 2x,
+                                                    "
+                                                    src="./images/portfolio/mobile/poject_3_mobile.jpg" alt="Ресторан Seafood" />
                 <p class="projects-description">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Temporibus voluptas, nostrum optio ad nobis dolor ipsa
@@ -183,13 +200,20 @@
                 aria-label="Ссылка на Проект Prime"
               >
               <div class="projects-overlay">
-                <img
-                  class="projects-img"
-                  src="./images/portfolio/project_4.jpg"
-                  alt="Проект Prime"
-                  width="370"
-                  height="294"
-                />
+                <picture class="projects-img-set">
+                  <source class="projects-img-set-desktop"
+                    srcset="./images/portfolio/project_4.webp 1x, ./images/portfolio/project_4@2x.webp 2x" type="image/webp"
+                    media="(min-width: 1200px)" />
+                  <source class="projects-img-set-mobile"
+                    srcset="./images/portfolio/mobile/poject_4_mobile.webp 1x, ./images/portfolio/mobile/poject_4_mobile@2x.webp 2x"
+                    type="image/webp" media="(max-width: 1199px)" />
+                  <img class="projects-img" srcset="
+                                                                    ./images/portfolio/project_4.jpg 1x,
+                                                                    ./images/portfolio/project_4.jpg 2x,
+                                                                    ./images/portfolio/mobile/poject_4_mobile.jpg 1x,
+                                                                    ./images/portfolio/mobile/poject_4_mobile@2x.jpg 2x,
+                                                                    " src="./images/portfolio/mobile/poject_4_mobile.jpg"
+                    alt="Проект Prime" />
                 <p class="projects-description">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Temporibus voluptas, nostrum optio ad nobis dolor ipsa
@@ -212,13 +236,20 @@
                 aria-label="Ссылка на Проект Boxes"
               >
               <div class="projects-overlay">
-                <img
-                  class="projects-img"
-                  src="./images/portfolio/project_5.jpg"
-                  alt="Проект Boxes"
-                  width="370"
-                  height="294"
-                />
+                <picture class="projects-img-set">
+                  <source class="projects-img-set-desktop"
+                    srcset="./images/portfolio/project_5.webp 1x, ./images/portfolio/project_5@2x.webp 2x" type="image/webp"
+                    media="(min-width: 1200px)" />
+                  <source class="projects-img-set-mobile"
+                    srcset="./images/portfolio/mobile/poject_5_mobile.webp 1x, ./images/portfolio/mobile/poject_5_mobile@2x.webp 2x"
+                    type="image/webp" media="(max-width: 1199px)" />
+                  <img class="projects-img" srcset="
+                     ./images/portfolio/project_5.jpg 1x,
+                      ./images/portfolio/project_5.jpg 2x,
+                      ./images/portfolio/mobile/poject_5_mobile.jpg 1x,
+                      ./images/portfolio/mobile/poject_5_mobile@2x.jpg 2x,
+                      "
+                    src="./images/portfolio/mobile/poject_5_mobile.jpg" alt="Проект Boxes" />
                 <p class="projects-description">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Temporibus voluptas, nostrum optio ad nobis dolor ipsa
@@ -241,12 +272,20 @@
                 aria-label="ссылка на проект Inspiration has no Borders"
               >
               <div class="projects-overlay">
-                <img
-                  class="projects-img"
-                  src="./images/portfolio/project_6.jpg"
-                  alt="Inspiration has no Borders"
-                  width="370"
-                  height="294"
+                <picture class="projects-img-set">
+                  <source class="projects-img-set-desktop"
+                    srcset="./images/portfolio/project_6.webp 1x, ./images/portfolio/project_6@2x.webp 2x" type="image/webp"
+                    media="(min-width: 1200px)" />
+                  <source class="projects-img-set-mobile"
+                    srcset="./images/portfolio/mobile/poject_6_mobile.webp 1x, ./images/portfolio/mobile/poject_6_mobile@2x.webp 2x"
+                    type="image/webp" media="(max-width: 1199px)" />
+                  <img class="projects-img" srcset="
+                    ./images/portfolio/project_6.jpg 1x,
+                    ./images/portfolio/project_6.jpg 2x,
+                    ./images/portfolio/mobile/poject_6_mobile@2x.jpg 2x,
+                    ./images/portfolio/mobile/poject_6_mobile.jpg 1x,
+                    " 
+                    src="./images/portfolio/mobile/poject_6_mobile.jpg" alt="Inspiration has no Borders" />
                 />
                 <p class="projects-description">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -266,29 +305,35 @@
               <a
                 class="projects-link link"
                 href=""
-                aria-label="Сылка на проект Издание Limited Edition"
-              >
-              <div class="projects-overlay">
-                <img
-                  class="projects-img"
-                  src="./images/portfolio/project_7.jpg"
-                  alt="Издание Limited Edition"
-                  width="370"
-                  height="294"
-                />
-                <p class="projects-description">
+                aria-label="Сылка на проект Издание Limited Edition">
+                <div class="projects-overlay">
+                  <picture class="projects-img-set">
+                    <source class="projects-img-set-desktop"
+                      srcset="./images/portfolio/project_7.webp 1x, ./images/portfolio/project_7@2x.webp 2x" type="image/webp"
+                      media="(min-width: 1200px)" />
+                    <source class="projects-img-set-mobile"
+                      srcset="./images/portfolio/mobile/poject_7_mobile.webp 1x, ./images/portfolio/mobile/poject_7_mobile@2x.webp 2x"
+                      type="image/webp" media="(max-width: 1199px)" />
+                    <img class="projects-img" srcset="
+                      ./images/portfolio/project_7.jpg 1x,
+                      ./images/portfolio/project_7.jpg 2x,
+                      ./images/portfolio/mobile/poject_7_mobile@2x.jpg 2x,
+                      ./images/portfolio/mobile/poject_7_mobile.jpg 1x,
+                      " 
+                      src="./images/portfolio/mobile/poject_7_mobile.jpg" alt="Издание Limited Edition" />
+                    />
+                  <p class="projects-description">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Temporibus voluptas, nostrum optio ad nobis dolor ipsa
                   necessitatibus non id velit? Repellat doloremque vel autem id
                   ullam fugit. Consequatur cum ipsa ratione nihil delectus
                   excepturi placeat obcaecati? 
-                </p>
+                  </p>
                 </div>
                 <h2 class="projects-title">
                   Издание <span lang="en">Limited Edition</span>
                 </h2>
-                <p class="projects-type">Дизайн</p>
-                
+                <p class="projects-type">Дизайн</p> 
               </a>
             </li>
             <li class="projects-item">
@@ -298,13 +343,21 @@
                 aria-label="Ссылка на проект Проект LAB"
               >
               <div class="projects-overlay">
-                <img
-                  class="projects-img"
-                  src="./images/portfolio/project_8.jpg"
-                  alt="Проект LAB"
-                  width="370"
-                  height="294"
-                />
+                <picture class="projects-img-set">
+                  <source class="projects-img-set-desktop"
+                    srcset="./images/portfolio/project_8.webp 1x, ./images/portfolio/project_8@2x.webp 2x" type="image/webp"
+                    media="(min-width: 1200px)" />
+                  <source class="projects-img-set-mobile"
+                    srcset="./images/portfolio/mobile/poject_8_mobile.webp 1x, ./images/portfolio/mobile/poject_8_mobile@2x.webp 2x"
+                    type="image/webp" media="(max-width: 1199px)" />
+                  <img class="projects-img" srcset="
+                      ./images/portfolio/project_8.jpg 1x,
+                      ./images/portfolio/project_8.jpg 2x,
+                      ./images/portfolio/mobile/poject_8_mobile@2x.jpg 2x,
+                      ./images/portfolio/mobile/poject_8_mobile.jpg 1x,
+                      "
+                      src="./images/portfolio/mobile/poject_8_mobile.jpg" alt="Проект LAB" />
+                  />
                 <p class="projects-description">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Temporibus voluptas, nostrum optio ad nobis dolor ipsa
@@ -327,23 +380,33 @@
                 aria-label="Ссылка на проект Growing Business"
               >
               <div class="projects-overlay">
-                <img
-                  class="projects-img"
-                  src="./images/portfolio/project_9.jpg"
-                  alt="Growing Business"
-                  width="370"
-                  height="294"
-                />
-                  <p class="projects-description">
+                <picture class="projects-img-set">
+                  <source class="projects-img-set-desktop"
+                    srcset="./images/portfolio/project_9.webp 1x, ./images/portfolio/project_9@2x.webp 2x" type="image/webp"
+                     media="(min-width: 1200px)" />
+                  <source class="projects-img-set-mobile"
+                    srcset="./images/portfolio/mobile/poject_9_mobile.webp 1x, ./images/portfolio/mobile/poject_9_mobile@2x.webp 2x"
+                    type="image/webp" media="(max-width: 1199px)" />
+                  <img class="projects-img" srcset="
+                    ./images/portfolio/project_9.jpg 1x,
+                    ./images/portfolio/project_9.jpg 2x,
+                    ./images/portfolio/mobile/poject_9_mobile@2x.jpg 2x,
+                    ./images/portfolio/mobile/poject_9_mobile.jpg 1x,
+                    " 
+                    src="./images/portfolio/mobile/poject_9_mobile.jpg" alt="Growing Business" />
+                  />
+                   <p class="projects-description">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.Temporibus voluptas, nostrum optio ad nobis dolor ipsa
                   necessitatibus non id velit? Repellat doloremque vel autem id
                   ullam fugit. Consequatur cum ipsa ratione nihil delectus
                   excepturi placeat obcaecati? 
                 </p>
                 </div>            
-            <h2 class="projects-title" lang="en">Growing Business</h2>
-            <p class="projects-type">Приложение</p></li>
-          </a>                              </ul>
+                <h2 class="projects-title" lang="en">Growing Business</h2>
+                <p class="projects-type">Приложение</p>
+              </a>
+          </li>
+        </ul>
         </div>
       </section>
     </main>
